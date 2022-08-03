@@ -1,0 +1,28 @@
+.card {
+    @apply cursor-pointer flex     h-[20rem] min-w-[180px] border border-gray-700 rounded transition;
+    margin: 1rem 1rem;
+    flex-direction: column;
+    &:hover {
+        border-radius: 4px;
+        box-shadow: 0 0 5px 0 #43acdc;
+        border: solid 1px #3a8bc2;
+
+    }
+
+    .cardTime {
+        color: #01254F;
+        font-family: 'Poppins';
+        font-size: 16px;
+    }
+
+    .cardTitle {
+        color: #01254F;
+
+    }
+
+    .cardSubTitle {
+        color:  rgba(0, 0, 0, 0.65);;
+
+
+    }
+}

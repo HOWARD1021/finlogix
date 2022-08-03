@@ -1,0 +1,73 @@
+.nav {
+    // border-bottom: $bg-cacc71 2px solid;
+    // background-color: $bg-131b26;
+    @apply mb-10;
+    border-bottom: 1px  solid  #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navWidth {
+    @apply xl:mx-36 xl:px-4 mx-8 px-8;
+  }
+  
+  .navAlign {
+    @apply relative flex items-center justify-between h-16 my-4;
+  }
+  
+  .logoArea {
+    @apply absolute inset-y-0 left-0 flex items-center;
+    .navLogo {
+      height: 90%;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  
+  .loginArea {
+    @apply absolute inset-y-0 right-0 flex items-center;
+    &.login {
+      @apply justify-end;
+      .navText {
+        @apply mr-8;
+      }
+    }
+    .navText {
+    //   color: $text-b8ad8a;
+    }
+    .navLang {
+      @apply flex items-center h-2/5 relative;
+      .navLangIcon {
+        @apply h-full cursor-pointer;
+        img {
+          @apply h-full;
+        }
+      }
+      .translateIcon {
+        @apply relative;
+      }
+      .langDropdown {
+        @apply absolute flex flex-col items-center top-full right-1/2 z-10 text-white;
+        transform: translate(50%, 0%);
+        .navBg {
+          @apply text-sm rounded text-center py-2 w-32 mt-2;
+          background: -webkit-linear-gradient(top, rgba(44, 55, 69, 0.98), rgba(19, 27, 38, 0.98));
+          box-shadow: 0px 3px 3px 0 rgba(54, 67, 84, 0.5);
+        }
+        .langChild {
+          @apply py-2 text-center text-sm;
+          &:hover {
+            @apply cursor-pointer;
+            background: #434e5f;
+          }
+        }
+      }
+    }
+    .navIcon {
+      @apply h-2/5;
+      img {
+        @apply h-full;
+      }
+    }
+  }
+  

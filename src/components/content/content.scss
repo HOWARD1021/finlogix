@@ -1,0 +1,10 @@
+.content {
+  .firstContent {
+    @apply text-[28px];
+    color: #01254F;
+  }
+  .secondContent{
+    @apply w-[800px] h-[100px] text-center m-auto ;
+    color: rgba(0, 0, 0, 0.65);
+  } 
+}

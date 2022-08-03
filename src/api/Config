@@ -1,0 +1,5 @@
+ const   apiUrl = () =>{
+    return 'https://g1api.finlogix.com/v1'
+}
+
+export default apiUrl
